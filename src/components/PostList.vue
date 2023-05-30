@@ -7,7 +7,7 @@
             <a href="https://www.antdv.com/">{{ item.title }}</a>
           </template>
           <template #avatar>
-            <a-avatar :src="gege" />
+            <a-avatar :src="item.user.userAvatar" />
           </template>
         </a-list-item-meta>
       </a-list-item>
@@ -16,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import gege from "../assets/gege.jpg";
+//import gege from "../assets/gege.jpg";
 import { withDefaults, defineProps } from "vue";
 
 interface Props {

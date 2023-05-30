@@ -1,12 +1,12 @@
 <template>
   <a-list
-    item-layout="horizontal"
-    :grid="{ gutter: 16, xs: 1, sm: 2, md: 4, lg: 4, xl: 6, xxl: 3 }"
-    :data-source="props.pictureList"
+      item-layout="horizontal"
+      :grid="{ gutter: 16, xs: 1, sm: 2, md: 4, lg: 4, xl: 4, xxl: 3 }"
+      :data-source="props.pictureList"
   >
     <template #renderItem="{ item }">
       <a-list-item>
-        <a-card hoverable>
+        <a-card hoverable >
           <template #cover>
             <img :src="item.url" />
           </template>
